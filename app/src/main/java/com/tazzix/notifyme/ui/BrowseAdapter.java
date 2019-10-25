@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.ui;
+package com.tazzix.notifyme.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,10 +17,10 @@ import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.hcilab.projects.nlogx.R;
-import org.hcilab.projects.nlogx.misc.Const;
-import org.hcilab.projects.nlogx.misc.DatabaseHelper;
-import org.hcilab.projects.nlogx.misc.Util;
+import com.tazzix.notifyme.R;
+import com.tazzix.notifyme.misc.Const;
+import com.tazzix.notifyme.misc.DatabaseHelper;
+import com.tazzix.notifyme.misc.Util;
 import org.json.JSONException;
 import org.json.JSONObject;
 

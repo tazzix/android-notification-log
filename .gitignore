@@ -38,3 +38,9 @@ captures/
 
 # Keystore files
 *.jks
+
+# MacOS files
+.DS_Store
+
+# Confidential information
+google-services.json

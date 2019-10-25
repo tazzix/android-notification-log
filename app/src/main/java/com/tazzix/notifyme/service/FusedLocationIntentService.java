@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.service;
+package com.tazzix.notifyme.service;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -6,9 +6,8 @@ import android.content.SharedPreferences;
 import android.location.Location;
 import android.preference.PreferenceManager;
 
-import com.google.android.gms.location.LocationResult;
 
-import org.hcilab.projects.nlogx.misc.Const;
+import com.tazzix.notifyme.misc.Const;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -24,6 +23,7 @@ public class FusedLocationIntentService extends IntentService {
 
 	@Override
 	protected void onHandleIntent(@Nullable Intent intent) {
+		/*
 		if(LocationResult.hasResult(intent)) {
 			LocationResult locationResult = LocationResult.extractResult(intent);
 			Location location = locationResult.getLastLocation();
@@ -46,6 +46,8 @@ public class FusedLocationIntentService extends IntentService {
 			SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
 			sp.edit().putString(Const.PREF_LAST_LOCATION, str).apply();
 		}
+
+		 */
 	}
 
 }

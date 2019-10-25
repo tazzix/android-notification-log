@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.ui;
+package com.tazzix.notifyme.ui;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.hcilab.projects.nlogx.R;
+import com.tazzix.notifyme.R;
 
 class BrowseViewHolder extends RecyclerView.ViewHolder {
 

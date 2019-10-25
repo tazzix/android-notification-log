@@ -1,3 +1,10 @@
+# Notes on the fork 
+Modifying the code for a Notification Mirroring solution that let's you chose applications to send their notifications to Firebase which can be sent to a PWA app as notifications and pulled from Firestore DB on demand.
+
+The intent is to use the PWA on KaiOS but can obviously be used on other devices. There is a possibility to implement a two way mechanism which could allow executing certain commands / functions on Android side, e.g. SMS from PC, etc.
+
+Also removing certain things from the original code which are irrelevant, e.g. location and activity tracking.
+
 # Notification Log for Android
 
 An Open-Source Framework for Notification Research on Mobile Devices.

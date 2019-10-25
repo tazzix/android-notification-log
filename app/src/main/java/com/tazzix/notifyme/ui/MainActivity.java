@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.ui;
+package com.tazzix.notifyme.ui;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -11,11 +11,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import org.hcilab.projects.nlogx.R;
-import org.hcilab.projects.nlogx.misc.Const;
-import org.hcilab.projects.nlogx.misc.DatabaseHelper;
-import org.hcilab.projects.nlogx.misc.ExportTask;
-import org.hcilab.projects.nlogx.service.NotificationHandler;
+import com.tazzix.notifyme.R;
+import com.tazzix.notifyme.misc.Const;
+import com.tazzix.notifyme.misc.DatabaseHelper;
+import com.tazzix.notifyme.misc.ExportTask;
+import com.tazzix.notifyme.service.NotificationHandler;
 
 public class MainActivity extends AppCompatActivity {
 

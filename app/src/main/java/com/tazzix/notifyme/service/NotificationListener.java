@@ -1,29 +1,17 @@
-package org.hcilab.projects.nlogx.service;
+package com.tazzix.notifyme.service;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.app.PendingIntent;
-import android.content.Intent;
 import android.os.Build;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
-import com.google.android.gms.location.ActivityRecognition;
-import com.google.android.gms.location.ActivityRecognitionClient;
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
-
-import org.hcilab.projects.nlogx.misc.Const;
-import org.hcilab.projects.nlogx.misc.Util;
+import com.tazzix.notifyme.misc.Const;
 
 public class NotificationListener extends NotificationListenerService {
 
 	private static NotificationListener instance = null;
 
+	/*
 	private ActivityRecognitionClient activityRecognitionClient = null;
 	private PendingIntent activityRecognitionPendingIntent = null;
 
@@ -35,8 +23,8 @@ public class NotificationListener extends NotificationListenerService {
 		super.onCreate();
 		if(Build.VERSION.SDK_INT < 21) {
 			instance = this;
-			startActivityRecognition();
-			startFusedLocationIntentService();
+			//startActivityRecognition();
+			//startFusedLocationIntentService();
 		}
 	}
 
@@ -44,8 +32,8 @@ public class NotificationListener extends NotificationListenerService {
 	public void onDestroy() {
 		if(Build.VERSION.SDK_INT < 24) {
 			instance = null;
-			stopActivityRecognition();
-			stopFusedLocationIntentService();
+			//stopActivityRecognition();
+			//stopFusedLocationIntentService();
 		}
 		super.onDestroy();
 	}
@@ -55,8 +43,8 @@ public class NotificationListener extends NotificationListenerService {
 		super.onListenerConnected();
 		if(Build.VERSION.SDK_INT >= 21) {
 			instance = this;
-			startActivityRecognition();
-			startFusedLocationIntentService();
+			//startActivityRecognition();
+			//startFusedLocationIntentService();
 		}
 	}
 
@@ -64,11 +52,12 @@ public class NotificationListener extends NotificationListenerService {
 	public void onListenerDisconnected() {
 		if(Build.VERSION.SDK_INT >= 24) {
 			instance = null;
-			stopActivityRecognition();
-			stopFusedLocationIntentService();
+			//stopActivityRecognition();
+			//stopFusedLocationIntentService();
 		}
 		super.onListenerDisconnected();
 	}
+	 */
 
 	@Override
 	public void onNotificationPosted(StatusBarNotification sbn) {
@@ -100,6 +89,7 @@ public class NotificationListener extends NotificationListenerService {
 		}
 	}
 
+	/*
 	public static StatusBarNotification[] getAllActiveNotifications() {
 		if(instance != null) {
 			try {
@@ -122,6 +112,7 @@ public class NotificationListener extends NotificationListenerService {
 		}
 		return null;
 	}
+	*/
 
 	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
 	public static int getInterruptionFilter() {
@@ -159,6 +150,7 @@ public class NotificationListener extends NotificationListenerService {
 		return null;
 	}
 
+	/*
 	private void startActivityRecognition() {
 		if(!Const.ENABLE_ACTIVITY_RECOGNITION) {
 			return;
@@ -211,5 +203,5 @@ public class NotificationListener extends NotificationListenerService {
 			fusedLocationClient.removeLocationUpdates(fusedLocationPendingIntent);
 		}
 	}
-
+	*/
 }

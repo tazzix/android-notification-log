@@ -13,7 +13,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="org.hcilab.projects.nlogx"
-            android:targetClass="org.hcilab.projects.nlogx.ui.BrowseActivity" />
+            android:targetClass="com.tazzix.notifyme.ui.BrowseActivity" />
     </shortcut>
 
 </shortcuts>

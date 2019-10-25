@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.hcilab.projects.nlogx">
+    package="com.tazzix.notifyme">
 
     <!-- Normal Permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-
-    <!-- Dangerous Permissions -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="false"
@@ -65,10 +60,6 @@
 
         <service
             android:name=".service.ActivityRecognitionIntentService"
-            android:exported="false" />
-
-        <service
-            android:name=".service.FusedLocationIntentService"
             android:exported="false" />
 
         <!-- Providers -->

@@ -1,14 +1,11 @@
-package org.hcilab.projects.nlogx.service;
+package com.tazzix.notifyme.service;
 
 import android.app.IntentService;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.google.android.gms.location.ActivityRecognitionResult;
-import com.google.android.gms.location.DetectedActivity;
-
-import org.hcilab.projects.nlogx.misc.Const;
+import com.tazzix.notifyme.misc.Const;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,6 +27,7 @@ public class ActivityRecognitionIntentService extends IntentService {
 			return;
 		}
 
+		/*
 		ActivityRecognitionResult result = ActivityRecognitionResult.extractResult(intent);
 
 		ArrayList<DetectedActivity> detectedActivities = (ArrayList<DetectedActivity>) result.getProbableActivities();
@@ -57,8 +55,11 @@ public class ActivityRecognitionIntentService extends IntentService {
 
 		SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
 		sp.edit().putString(Const.PREF_LAST_ACTIVITY, str).apply();
+
+		 */
 	}
 
+	/*
 	private String getActivityString(int detectedActivityType) {
 		switch(detectedActivityType) {
 			case DetectedActivity.IN_VEHICLE:
@@ -81,5 +82,7 @@ public class ActivityRecognitionIntentService extends IntentService {
 				return detectedActivityType + "";
 		}
 	}
+
+	 */
 
 }

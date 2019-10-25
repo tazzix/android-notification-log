@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.misc;
+package com.tazzix.notifyme.misc;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.provider.Settings;
 
 import androidx.core.content.PermissionChecker;
 
-import org.hcilab.projects.nlogx.BuildConfig;
+import com.tazzix.notifyme.BuildConfig;
 
 import java.util.ArrayList;
 import java.util.List;

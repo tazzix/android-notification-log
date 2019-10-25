@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx;
+package com.tazzix.notifyme;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

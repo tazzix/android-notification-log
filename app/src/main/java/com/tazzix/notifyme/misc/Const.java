@@ -1,6 +1,6 @@
-package org.hcilab.projects.nlogx.misc;
+package com.tazzix.notifyme.misc;
 
-import org.hcilab.projects.nlogx.BuildConfig;
+import com.tazzix.notifyme.BuildConfig;
 
 public class Const {
 

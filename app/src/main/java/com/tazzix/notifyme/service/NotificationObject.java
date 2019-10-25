@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.service;
+package com.tazzix.notifyme.service;
 
 import android.app.Notification;
 import android.content.Context;
@@ -11,9 +11,9 @@ import android.service.notification.StatusBarNotification;
 
 import androidx.core.app.NotificationCompat;
 
-import org.hcilab.projects.nlogx.BuildConfig;
-import org.hcilab.projects.nlogx.misc.Const;
-import org.hcilab.projects.nlogx.misc.Util;
+import com.tazzix.notifyme.BuildConfig;
+import com.tazzix.notifyme.misc.Const;
+import com.tazzix.notifyme.misc.Util;
 import org.json.JSONObject;
 
 import java.util.Arrays;
@@ -29,6 +29,11 @@ class NotificationObject {
 
 	// General
 	private String packageName;
+
+	public long getPostTime() {
+		return postTime;
+	}
+
 	private long postTime;
 	private long systemTime;
 
@@ -88,6 +93,47 @@ class NotificationObject {
 	private String appName;
 	private String tickerText;
 	private String title;
+
+	public String getAppName() {
+		return appName;
+	}
+
+	public String getTickerText() {
+		return tickerText;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getTitleBig() {
+		return titleBig;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public String getTextBig() {
+		return textBig;
+	}
+
+	public String getTextInfo() {
+		return textInfo;
+	}
+
+	public String getTextSub() {
+		return textSub;
+	}
+
+	public String getTextSummary() {
+		return textSummary;
+	}
+
+	public String getTextLines() {
+		return textLines;
+	}
+
 	private String titleBig;
 	private String text;
 	private String textBig;

@@ -1,4 +1,4 @@
-package org.hcilab.projects.nlogx.ui;
+package com.tazzix.notifyme.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import org.hcilab.projects.nlogx.R;
+import com.tazzix.notifyme.R;
 
 public class BrowseActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
